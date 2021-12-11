@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChartActivity"
+    android:background="@color/colorPrimary"
+    android:layoutDirection="rtl">
+    <RelativeLayout
+        android:background="#020A39"
+        android:id="@+id/toolbar55"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_chart"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="lkdc"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+        <ScrollView
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/toolbar55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="16dp">
+
+                        <RelativeLayout
+                            android:background="#020A39"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <org.eazegraph.lib.charts.BarChart
+                                android:layout_width="250dp"
+                                android:layout_height="250dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="16dp"
+                                android:id="@+id/barchart"
+                                />
+
+                            <LinearLayout
+                                android:layout_gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/barchart"
+                                android:orientation="vertical"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <View
+
+                                        android:layout_margin="8dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="#18AEA0"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="کل مبتلایان"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <View
+
+                                        android:layout_margin="8dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="#FFEC47"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="مبتلایان امروز"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <View
+
+                                        android:layout_margin="8dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="#17D81F"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="کل بهبود یافتگان"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <View
+
+                                        android:layout_margin="8dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="@color/white"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="بهبود یافتگان امروز"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <View
+
+                                        android:layout_margin="8dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="#8F0813"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="کل فوت شدگان"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <View
+
+                                        android:layout_margin="8dp"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:background="#605F59"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="فوت شدگان امروز"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_gravity="center"/>
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+</RelativeLayout>
