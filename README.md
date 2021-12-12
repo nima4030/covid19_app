@@ -2,7 +2,7 @@
   This app provides you with Corona virus statistics in more than 150 countries around the world
 
   **version 1.0.0**
-- for Download Application: https://github.com/nima4030/app-covid19/raw/main/app/release/covid-19.apk 
+- for Download Application: https://github.com/nima4030/app-covid19/app/release/covid-19.apk 
 
 ---
 
